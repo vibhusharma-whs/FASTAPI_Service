@@ -39,3 +39,18 @@ This is a template for starting new service in the Whitehat navika project. All 
 
 And optional files depending on the requirements,
 - `build/docker/Dockerfile.<optional_image_name>` any additional images that should be built from this repository
+
+
+# Bootstrapping the application
+
+To build the appropriate Docker containers for Fast API service and PostgreSQL service, run the following from your terminal:
+
+`docker-compose up -d --build`
+
+When it's done building, enter your container with:
+
+`docker-compose up`
+
+Open up your browser and go to http://localhost:8000/docs. You should see the API for GET and POST requests to try them out.
+
+
